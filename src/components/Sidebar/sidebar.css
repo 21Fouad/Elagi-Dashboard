@@ -1,0 +1,136 @@
+.sidebar {
+    width: 250px; 
+    min-height: 100vh;
+    transition: width 0.3s;
+    background-color: #2C73EB !important;
+    position: fixed !important;
+}
+.sidebar.collapsed {
+    width: 56px; 
+}
+.navbar{
+    z-index: 1045;
+}
+.offcanvas{
+    z-index: 1045;
+}
+.nav-link{
+    color: white !important;
+}
+.navbar-toggler {
+    border: none !important; /* Removes border */
+    outline: none !important; /* Removes outline */
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important; /* Removes focus outline */
+}
+
+.fa-bars:before, .fa-navicon:before {
+    color: white;
+}
+.switch-style{
+    height: 40vh;
+    margin-left: 1.9rem;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.switch > span {
+    position: absolute;
+    top: 9.5px;
+    pointer-events: none;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .06);
+    width: 50%;
+    text-align: center;
+}
+
+input.check-toggle-round-flat:checked ~ .off {
+    color: #fff;
+}
+
+input.check-toggle-round-flat:checked ~ .on {
+    color: #2C73EB;
+}
+
+.switch > span.on {
+    left: 0;
+    padding-left: 2px;
+    color: #fff;
+}
+
+.switch > span.off {
+    right: 0;
+    padding-right: 4px;
+    color: #2C73EB;
+}
+
+.check-toggle {
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden;
+}
+.check-toggle + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+input.check-toggle-round-flat + label {
+    padding: 2px;
+    width: 97px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 60px;
+}
+input.check-toggle-round-flat + label:before, input.check-toggle-round-flat + label:after {
+    display: block;
+    position: absolute;
+    content: "";
+}
+input.check-toggle-round-flat + label:before {
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    background-color: #fff;
+    border-radius: 60px;
+}
+input.check-toggle-round-flat + label:after {
+    top: 4px;
+    left: 4px;
+    bottom: 4px;
+    width: 48px;
+    background-color: #2C73EB;
+    border-radius: 52px;
+    -webkit-transition: margin 0.2s;
+    -moz-transition: margin 0.2s;
+    -o-transition: margin 0.2s;
+    transition: margin 0.2s;
+}
+input.check-toggle-round-flat:checked + label:after {
+margin-left: 41px;
+}
+
+[dir='rtl'] .side-list{
+    padding-right: 0 !important;
+}
+[dir='rtl'] .switch-style{
+    margin-right: 1.9rem;
+}
+[dir='rtl'] .dropdown-menu{
+    right: 5px !important;
+    text-align: center !important;
+    inset: 0px auto auto auto !important;
+}

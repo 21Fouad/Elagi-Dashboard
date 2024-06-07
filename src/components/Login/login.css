@@ -1,0 +1,31 @@
+.login input{
+    border-radius: 0 ;
+    -webkit-border-radius: 0 ;
+    -moz-border-radius: 0 ;
+    -ms-border-radius: 0 ;
+    -o-border-radius: 0 ;
+}
+.login span{
+    border-radius: 0 ;
+    -webkit-border-radius: 0 ;
+    -moz-border-radius: 0 ;
+    -ms-border-radius: 0 ;
+    -o-border-radius: 0 ;
+}
+.form-check-input[type=checkbox] {
+    border-radius: .25em !important;
+    -webkit-border-radius: .25em !important;
+    -moz-border-radius: .25em !important;
+    -ms-border-radius: .25em !important;
+    -o-border-radius: .25em !important;
+}
+[dir = 'rtl'] .login #check{
+    border-radius: 0.25rem !important;
+    -webkit-border-radius: 0.25rem !important;
+    -moz-border-radius: 0.25rem !important;
+    -ms-border-radius: 0.25rem !important;
+    -o-border-radius: 0.25rem !important;
+}
+[dir = 'rtl'] .login .forget{
+    text-align: left !important;
+}
