@@ -136,7 +136,7 @@ export default function FeedbackTable() {
                                         <td>{fb.rating}</td>
                                         <td>
                                             <button className="btn btn-success" onClick={() => handleApprove(fb.id)}>{t('feedback.approve')}</button>
-                                            <button className="btn btn-warning" onClick={() => handleIgnore(fb.id)}>{t('feedback.ignore')}</button>
+                                            <button className="btn btn-warning mx-1" onClick={() => handleIgnore(fb.id)}>{t('feedback.ignore')}</button>
                                         </td>
                                     </tr>
                                 ))}

@@ -17,7 +17,7 @@ export default function Sidebar({ unreadCount }) {
 
     useEffect(() => {
         function handleResize() {
-            setIsMobile(window.innerWidth < 768);
+            setIsMobile(window.innerWidth < 769);
         }
 
         window.addEventListener('resize', handleResize);
